@@ -1,4 +1,4 @@
-# Google Analytics 4 (GA4) SDK (BrightScript / SceneGraph Component Library)
+# GA4 SDK for Roku 
 The **Invotyx GA4 SDK** provides a lightweight, efficient, and extensible interface for integrating **Google Analytics 4 (GA4)** into **Roku SceneGraph** applications. It enables Roku developers to collect analytics events, manage session data, and send structured telemetry directly to the **GA4 Measurement Protocol** endpoint, all while following Roku platform best practices.
 
 ## 🧩 Overview
@@ -18,23 +18,17 @@ The SDK can be distributed as a **Roku ComponentLibrary**, allowing seamless int
 - Tracks first-time visits (`first_visit`) and app openings (`first_open`).
 - Periodically updates session-based events (`user_engagement`, `app_time`).
 
-### 3. **Offline Event Queue**
-- Implements an internal buffering system to safely queue events when a network connection is unavailable.
-- Ensures that events are sent once connectivity is restored, minimizing data loss.
-
-### 4. **Event Batching**
+### 3. **Event Batching**
 - Supports batching multiple analytics events into a single network request, improving performance and minimizing bandwidth usage.
 
-### 5. **Custom Parameters**
+### 4. **Custom Parameters**
 - Allows extension of default payloads with user-defined parameters such as device info, playback details, or in-app navigation context.
 
-### 6. **Asynchronous Networking**
-- Uses Roku’s asynchronous task model (`roSGNode: Task`) to send events without blocking UI or user interactions.
+### 5. **Asynchronous Networking**
 - Provides internal retry logic for transient network failures.
 
 ## Requirements
-- Roku device (SceneGraph, OS 9.4+ recommended)
-- GA4 property and a Data Stream (web/app). You must create a Measurement Protocol API secret in GA UI for the data stream and Token from Invotyx owner.
+- GA4 property and a Data Stream (web/app). You must create a Measurement Protocol API secret in GA UI for the data stream and Token from Invotyx (SDK Owner).
 
 ## Usage Guide
 This component encapsulates the entire logic for interacting with the GA4 Measurement Protocol using Roku’s asynchronous networking and task execution model.
