@@ -28,7 +28,8 @@ The SDK can be distributed as a **Roku ComponentLibrary**, allowing seamless int
 - Provides internal retry logic for transient network failures.
 
 ## Requirements
-- GA4 property and a Data Stream (web/app). You must create a [Measurement Protocol API Secret guide](https://support.google.com/analytics/answer/12270356?hl=en) in GA UI for the data stream and Token from Invotyx (SDK Owner).
+- GA4 property and a Data Stream (web/app). You must create a [Measurement Protocol API Secret guide](https://support.google.com/analytics/answer/12270356?hl=en) in GA UI for the data stream.
+- [Token from Invotyx (SDK Owner)](https://invotyx.com/).
 
 ## Usage Guide
 This component encapsulates the entire logic for interacting with the GA4 Measurement Protocol using Roku’s asynchronous networking and task execution model.
