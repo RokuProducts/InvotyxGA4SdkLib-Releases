@@ -47,7 +47,7 @@ m.componentLib.uri="https://github.com/RokuProducts/InvotyxGA4SdkLib-Releases/re
 ```xml
 <ComponentLibrary
   id="componentLib"
-  uri="https://github.com/hmDanish/ComponentLibrary/releases/latest/download/roku-deploy.zip"
+  uri="https://github.com/RokuProducts/InvotyxGA4SdkLib-Releases/releases/download/v1.0.1/InvotyxGA4SdkLib_11_03.pkg"
 />
 ```
 
